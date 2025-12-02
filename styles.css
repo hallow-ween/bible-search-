@@ -3,8 +3,24 @@ src: url(baskervville.ttf");
 font-family: baskervville;
 }
 
-body {
+p {
 font-family: baskervville;
+}
+h1 {
+font-family: baskervville;
+}
+h2 {
+font-family: baskervville;
+}
+select {
+font-family: baskervville;
+}
+button {
+font-family: baskervville;
+}
+
+
+body {
 display: flex;
 flex-direction: column;
 align-items: center;
