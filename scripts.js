@@ -7,13 +7,13 @@ const verseText =
 document.getElementById("verseText");
 
 function findVerse() {
-const bookval = 
+const bookvalue = 
 bookSelector.value.trim();
-const chapnverseval =
+const chapnversevalue =
 bibleVerseAndChapter.value.trim();
 
 let bibleverse = {};
-fetch(`https://bible-api.com/${bookval}+${chapnverseval}`)
+fetch(`https://bible-api.com/${bookvalue}+${chapnversevalue}`)
 .then (response => response.json())
 .then (data => { bibleverse = data;
 console.log(data);
