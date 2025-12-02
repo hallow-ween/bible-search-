@@ -16,6 +16,10 @@ let bibleverse = {};
 fetch(`https://bible-api.com/${bookvalue}+${chapnversevalue}`)
 .then (response => response.json())
 .then (data => { bibleverse = data;
+if (data.error) {
+verseName.textContent = `${bookvalue} ${chapternversevalue} is invalid!`
+return;
+}
 console.log(data);
 verseName.textContent = data.reference;
 verseText.textContent = data.text;
