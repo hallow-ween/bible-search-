@@ -22,6 +22,7 @@ fetch(`https://bible-api.com/${bookvalue}+${chapnversevalue}`)
 .then (data => { bibleverse = data;
 if (data.error) {
 verseName.textContent = `${bookvalue} ${chapnversevalue} is invalid!`
+verseText.textContent = "";
 return;
 }
 console.log(data);
@@ -39,17 +40,25 @@ if (!dark) {
 document.body.style.backgroundColor = "black";
 document.body.style.color = "white";
 findButton.style.backgroundColor = "black";
+  findButton.style.color = "white";
 darklight.style.backgroundColor = "black";
+  darklight.style.color = "white";
 bibleVerseAndChapter.style.backgroundColor = "black";
+  bibleVerseAndChapter.style.color = "white";
 bookSelector.style.backgroundColor = "black";
+  bookSelector.style.color = "white";
 dark = true;
 } else {
 document.body.style.backgroundColor = "white";
 document.body.style.color = "black";
 findButton.style.backgroundColor = "white";
+    findButton.style.color = "black";
 darklight.style.backgroundColor = "white";
+    darklight.style.color = "black";
 bibleVerseAndChapter.style.backgroundColor = "white";
+    bibleVerseAndChapter.style.color = "black";
 bookSelector.style.backgroundColor = "white";
+      bookSelector.style.color = "black";
 dark = false;
 }
 };
