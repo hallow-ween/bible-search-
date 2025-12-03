@@ -5,7 +5,7 @@ const verseName =
 document.getElementById("verseName");
 const verseText =
 document.getElementById("verseText");
-const findButtom =
+const findButton =
 document.getElementById("findButton");
 const darklight =
 document.getElementById("darklight");
@@ -41,7 +41,7 @@ document.body.style.color = "white";
 findButton.style.backgroundColor = "black";
 darklight.style.backgroundColor = "black";
 bibleVerseAndChapter.style.backgroundColor = "black";
-bibleBooks.style.backgroundColor = "black";
+bookSelector.style.backgroundColor = "black";
 dark = true;
 } else {
 document.body.style.backgroundColor = "white";
@@ -49,7 +49,7 @@ document.body.style.color = "black";
 findButton.style.backgroundColor = "white";
 darklight.style.backgroundColor = "white";
 bibleVerseAndChapter.style.backgroundColor = "white";
-bibleBooks.style.backgroundColor = "white";
+bookSelector.style.backgroundColor = "white";
 dark = false;
 }
 };
