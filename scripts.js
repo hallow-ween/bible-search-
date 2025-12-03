@@ -34,14 +34,10 @@ function darkOrLight() {
 if (!dark) {
 document.body.style.backgroundColor = "black";
 document.body.style.color = "white";
-document.select.backgroundColor = "black";
-document.button.backgroundColor = "black";
 dark = true;
 } else {
 document.body.style.backgroundColor = "white";
 document.body.style.color = "black";
-document.select.backgroundColor = "white";
-document.button.backgroundColor = "white";
 dark = false;
 }
 };
