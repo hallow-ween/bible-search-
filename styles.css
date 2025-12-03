@@ -1,5 +1,5 @@
 @font-face {
-src: url(baskervville.ttf");
+src: url(baskervville.ttf);
 font-family: baskervville;
 }
 
@@ -14,11 +14,14 @@ font-family: baskervville;
 }
 select {
 font-family: baskervville;
+border-style: solid;
+border-color: #F59E0B;
 }
 button {
 font-family: baskervville;
+border-style: solid;
+border-color: #F59E0B;
 }
-
 
 body {
 display: flex;
@@ -31,4 +34,7 @@ margin: 0;
 width: 400px;
 height: 200px;
 overflow: auto;
+border-style: solid; 
+border-color: #F59E0B;
+bottom: 0;
 }
