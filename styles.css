@@ -22,6 +22,10 @@ font-family: baskervville;
 border-style: solid;
 border-color: #F59E0B;
 }
+a {
+font-family: baskervville;
+color: #F59E0B;
+}
 
 body {
 display: flex;
