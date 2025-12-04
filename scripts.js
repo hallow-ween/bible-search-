@@ -9,15 +9,19 @@ const findButton =
 document.getElementById("findButton");
 const darklight =
 document.getElementById("darklight");
+const translations = 
+document.getElementById("translations");
 
 function findVerse() {
 const bookvalue = 
-bookSelector.value.trim();
+bookSelector.value;
 const chapnversevalue =
 bibleVerseAndChapter.value.trim();
+const translationvalue = 
+translations.value;
 
 let bibleverse = {};
-fetch(`https://bible-api.com/${bookvalue}+${chapnversevalue}`)
+fetch(`https://bible-api.com/${bookvalue}+${chapnversevalue}?translation=${translationvalue}`)
 .then (response => response.json())
 .then (data => { bibleverse = data;
 if (data.error) {
