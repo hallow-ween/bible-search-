@@ -37,6 +37,19 @@ verseText.textContent = data.text;
 .catch(err => console.error(err));
 };
 
+function randomVerse() {
+let randomverse ={};
+fetch("https://bible-api.com/?random=verse")
+.then (response => response.json())
+.then (data => { randomverse = data;
+return;
+}
+verseName.textContent = data.reference;
+verseText.textContent = data.text;
+})
+.catch(err => console.error(err));
+
+};
 let dark = false;
 
 function darkOrLight() {
